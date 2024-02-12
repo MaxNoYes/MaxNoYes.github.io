@@ -104,15 +104,31 @@ Assignment 2 putting multimedia assests into an html website-->
   </head>
   <body>
     <header>
+        <figure>
+            
+        <img
+        src="foxLogo120.png"
+        alt="The firefox logo of a fox cradling the earth"/>
+
+        <figcaption>
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
-
+            </figcaption>
+        </figure>
     </header>
 
     <main>
       <article>
         <!-- insert iframe from youtube -->
+        <iframe 
+        width="400" 
+        height="210" 
+        src="https://www.youtube.com/embed/ojcNcvb1olg?si=x4T46yB-3D8lLUF6"
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
 
         <h2>Rocking the free web</h2>
 
@@ -124,7 +140,12 @@ Assignment 2 putting multimedia assests into an html website-->
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img
+          srcset="foxLogo120.png 120w, foxLogo400.png 400w"
+          sizes="(max-width: 600) 120px, 400px"
+          src="foxLogo400.png"
+          alt="The firefox logo of a fox cradling the earth"
+          >
         </a>
         <a href="https://www.mozilla.org/">
           <img>

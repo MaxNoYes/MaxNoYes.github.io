@@ -109,7 +109,7 @@ Assignment 2 putting multimedia assests into an html website-->
             
         <img
         src="foxLogo120.png"
-        alt="The firefox logo of a fox cradling the earth"/>
+        alt="The firefox logo of a fox cradling the earth">
 
         <figcaption>
       <h1>Mozilla</h1>
@@ -143,7 +143,7 @@ Assignment 2 putting multimedia assests into an html website-->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
           <img
           srcset="foxLogo120.png 120w, foxLogo400.png 400w"
-          sizes="(max-width: 600) 120px, 400px"
+          sizes="(max-width: 600px) 120px, 400px"
           src="foxLogo400.png"
           alt="The firefox logo of a fox cradling the earth"
           >
@@ -151,7 +151,7 @@ Assignment 2 putting multimedia assests into an html website-->
         <a href="https://www.mozilla.org/">
           <img
           srcset="dinoHead120.png 120w, dinoHead400.png 400w"
-          sizes="(max-width: 600) 120px, 400px"
+          sizes="(max-width: 600px) 120px, 400px"
           src="dinoHead400.png"
           alt="A red cartoon dinosaur head of the mozilla company"
           >
@@ -159,7 +159,7 @@ Assignment 2 putting multimedia assests into an html website-->
         <a href="https://addons.mozilla.org/">
           <img
           srcset="firefox_addons120.jpg 120w, firefox_addons400.jpg 400w"
-          sizes="(max-width: 600) 120px, 400px"
+          sizes="(max-width: 600px) 120px, 400px"
           src="firefox_addons400.jpg"
           alt="The firefox logo of a fox cradling the earth printed onto a jigsaw puzzle"
           >
@@ -177,8 +177,9 @@ Assignment 2 putting multimedia assests into an html website-->
         <!-- insert picture element -->
         <picture>
             <source srcset="red_panda600.jpg 600w, red_panda1200.jpg 1200w"
-            media="(max-width 600) 600px, 1200px" />
-            <img src="red_panda1200.jpg" />
+            sizes="(max-width: 600px) 600px, 1200px" >
+            <img src="red_panda1200.jpg" 
+                  alt="A red panda sitting on a branch">
         </picture>
       </div>
 

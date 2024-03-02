@@ -6,7 +6,7 @@
 }
 
 body {
-  font: verdana;
+  font-family: verdana;
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1400px;
@@ -52,7 +52,7 @@ h1:first-child {
 }
 
 h1, h2 {
-  font: georgia;
+  font-family: georgia;
   font-size: 2.5rem;
   letter-spacing: 4px
 }
@@ -91,15 +91,15 @@ p a {
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
-  padding-right: 25px; /* Adjust the padding to make space for the icon */
+  padding-right: 25px; 
 }
 
 nav ul li{
-  list-style-type: none;
+  list-style-type: disc;
   width: 100px;
   height:75px;
   margin: 10px;
-  border-width: 2px;
+  border-width: 7px;
   border-color: #a66;
   text-align: center;
   padding: 10px;

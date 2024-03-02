@@ -2,4 +2,23 @@ html {
   font-family: sans-serif;
 }
 
+div{
+color: white;
+line-height: 150px;
+text-align: center;
+font-size: 1.5rem;
+text-shadow: 1px 2px black
+}
+.main-box{
+  border: 2px solid darkred;
+  background-color: red;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 20px white inset, 5px 5px 20px black inset;
+  background: linear-gradient(to bottom right, red 30%, black 150%);
+}
 /* Your CSS below here */

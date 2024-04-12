@@ -6,26 +6,26 @@ const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
 
-const picArray = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
+const picArray = ['images/pic1.jpg', 'images/pic2.jpg', 'images/pic3.jpg', 'images/pic4.jpg', 'images/pic5.jpg'];
 
 /* Declaring the alternative text for each image file */
 
 const picAltText ={
-    'pic1.jpg': 'Close=up of an eye.',
-    'pic2.jpg': 'A sandy beach with waves.',
-    'pic3.jpg': 'A close-up of flowers',
-    'pic4.jpg': 'Ancient Egyptian hieroglyphs',
-    'pic5.jpg': 'A moth or butterfly on a leaf'
+    'images/pic1.jpg': 'Close up of an eye.',
+    'images/pic2.jpg': 'A sandy beach with waves.',
+    'images/pic3.jpg': 'A close-up of flowers',
+    'images/pic4.jpg': 'Ancient Egyptian hieroglyphs',
+    'images/pic5.jpg': 'A moth or butterfly on a leaf'
 }
 
 /* Looping through images */
 
 
-for(let i = 0; i <= picArray.length; i++){
+for(let i = 0; i < picArray.length; i++){
     const newImage = document.createElement('img');
-    newImage.addEventListener()
     newImage.setAttribute('src', picArray[i]);
     newImage.setAttribute('alt', picAltText[picArray[i]]);
+    newImage.setAttribute('class', 'thumb-img');
     newImage.addEventListener('click', function(){
         displayedImage.setAttribute('src', this.getAttribute('src'));
         displayedImage.setAttribute('alt', this.getAttribute('alt'));
@@ -41,13 +41,9 @@ btn.addEventListener('click', function(){
         btn.textContent = 'Lighten'
         overlay.style.backgroundColor = "rgb(0 0 0 / 50%)";
     }
-    else if(btn.getAttribute('class') == 'light'){
+    else{
         btn.setAttribute('class', 'dark')
         btn.textContent = 'Darken'
         overlay.style.backgroundColor = "rgb(0 0 0 / 0%)";
     }
 })
-
-    btn.setAttribute("class", xxx);
-    btn.textContent = xxx;
-    overlay.style.backgroundColor = xxx;

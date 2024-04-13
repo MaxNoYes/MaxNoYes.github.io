@@ -189,6 +189,18 @@ function loop() {
     }
   }
 
+  canvas.addEventListener('click', function(event){
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+
+    const  dx = mouseX - evilCircle.x;
+    const  dy = mouseY - evilCircle.y;
+    const  distance = Math.sqrt(dx * dx + dy * dy);
+
+    if (distance < evilCircle.size) {
+      evilCircle.colour = randomRGB();
+    }
+  });
 
   evilCircle.draw();
   evilCircle.collisionDetect();
@@ -200,3 +212,4 @@ function loop() {
 }
 
 loop();
+

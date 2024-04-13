@@ -1,7 +1,7 @@
 //Name: Max Noyes
 //File: main.js
 //Date: 12 April 2024
-//Javascirpt for part4
+//Javascirpt for part1
 
 
 const customName = document.getElementById('customname');

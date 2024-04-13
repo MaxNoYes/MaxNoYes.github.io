@@ -1,3 +1,8 @@
+//Name: Max Noyes
+//File: main.js
+//Date: 12 April 2024
+//Javascirpt for part2
+
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 

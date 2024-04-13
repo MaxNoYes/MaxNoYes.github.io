@@ -1,3 +1,8 @@
+//Name: Max Noyes
+//File: main.js
+//Date: 12 April 2024
+//Javascirpt for part3
+
 // setup canvas
 
 const canvas = document.querySelector("canvas");
